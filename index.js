@@ -1,17 +1,18 @@
 // Import the http module
-import http from 'http';
+import qrcode from 'qrcode-terminal';
+import { Client } from 'whatsapp-web.js';
 
-// Define the server
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello, World!\n');
+// Create a new WhatsApp client instance
+const whatsappClient = new Client();
+
+whatsappClient.on('qr', (qr) => {
+    // Generate and display the QR code in the terminal
+    qrcode.generate(qr, { small: true });
 });
 
-// Define the port
-const port = 3000;
-
-// Start the server
-server.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}/`);
+whatsappClient.on('ready', () => {
+    console.log('WhatsApp client is ready!');
 });
+
+// Initialize the WhatsApp client
+whatsappClient.initialize();
