@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@waylaidwanderer/chatgpt-api": "github:veigamann/node-chatgpt-api",
     "dotenv": "^16.4.5",
     "qrcode-terminal": "^0.12.0",
     "whatsapp-web.js": "^1.23.0"
