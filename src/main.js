@@ -1,6 +1,7 @@
 import { setupAudioHandlers } from '../handlers/audioHandlers.js';
 import { setupAuthHandlers } from '../handlers/authHandlers.js';
 import { setupMessageHandlers } from '../handlers/messageHandlers.js';
+import { setupStickerHandlers } from '../handlers/stickerHandlers.js';
 import { setupVisionHandlers } from '../handlers/visionHandlers.js';
 import initializeClient from './../clients/whatsappClient.js';
 
@@ -13,5 +14,6 @@ setupAuthHandlers(client);
 setupMessageHandlers(client);
 setupVisionHandlers(client);
 setupAudioHandlers(client);
+setupStickerHandlers(client);
 
 client.initialize();
