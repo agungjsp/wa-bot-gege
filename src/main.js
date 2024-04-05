@@ -1,3 +1,4 @@
+import { setupAudioHandlers } from '../handlers/audioHandlers.js';
 import { setupAuthHandlers } from '../handlers/authHandlers.js';
 import { setupMessageHandlers } from '../handlers/messageHandlers.js';
 import { setupVisionHandlers } from '../handlers/visionHandlers.js';
@@ -11,5 +12,6 @@ const client = initializeClient();
 setupAuthHandlers(client);
 setupMessageHandlers(client);
 setupVisionHandlers(client);
+setupAudioHandlers(client);
 
 client.initialize();
