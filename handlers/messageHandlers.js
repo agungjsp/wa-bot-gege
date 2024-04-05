@@ -2,8 +2,8 @@ import { getCompletionService } from '../services/completionService.js';
 
 export function setupMessageHandlers(client) {
     /*
-        This event is fired when a new message is created.
-    */
+     * This event is fired when a new message is created.
+     */
     client.on('message_create', async (message) => {
         /**
          * !ask <question> - Ask a question to the bot.

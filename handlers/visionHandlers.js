@@ -2,8 +2,15 @@ import { getVisionService } from '../services/visionService.js';
 
 export function setupVisionHandlers(client) {
     let usersAwaitingResponseImage = new Set();
-
+    /*
+     * Listen for messages that start with '!scanimage' and then wait for the user to send an image.
+     * Once the image is received, process the image and send the response back to the user.
+     * The response is the result of the image recognition.
+     */
     client.on('message_create', async (message) => {
+        /*
+         * !scanimage - Ask the bot to recognize the content of an image.
+         */
         const senderId = message.from;
         if (message.body === '!scanimage' && !message.id.fromMe) {
             usersAwaitingResponseImage.add(senderId);
