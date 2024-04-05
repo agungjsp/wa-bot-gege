@@ -4,10 +4,24 @@
 WhatsApp Bot Gege is an innovative chatbot designed to enhance your WhatsApp messaging experience. Leveraging the power of Large Language Models (LLMs), this bot brings conversational capabilities right into your WhatsApp chats, making it easier than ever to get answers to your questions, recognize images and much more—all through the convenience of your favorite messaging app.
 
 ## Features
-- **Conversational Intelligence**: Ask any question, and get accurate, context-aware responses.
+- **Conversational Intelligence**: Ask any question and get accurate, context-aware responses.
 - **Image Recognition**: Send an image to the bot, and it will tell you what it sees.
-- **Command Support**: Use simple commands like `!ping`, `!ask <question>`, `!ask source <question>`, and `!scanimage` to interact with the bot.
-- **Future Updates**: Stay tuned for an upcoming feature that will allow you to transcribe audio messages!
+- **Audio Recognition**: Send an audio message to the bot, and it will transcribe it for you.
+- **Sticker Creation**: Create custom stickers from images.
+- **Open Source**: WhatsApp Bot Gege is open source, so you can contribute to its development and help make it even better.
+
+## Commands
+WhatsApp Bot Gege supports the following commands:
+| Command | Description |
+| --- | --- |
+| `!ask <question>` | Ask a question and get an answer. |
+| `!image` | Recognize objects in an image. |
+| `!audio` | Transcribe an audio message. |
+| `!sticker` | Create a sticker from an image. |
+
+> [!NOTE]
+> To use the `!audio` command, you must first reply to an audio message with the command.
+> To use the `!sticker` command, either reply to an image with the command or send an image with the command.
 
 ## Installation
 To get started with WhatsApp Bot Gege, follow these steps:
