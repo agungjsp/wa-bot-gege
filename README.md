@@ -8,16 +8,18 @@ WhatsApp Bot Gege is an innovative chatbot designed to enhance your WhatsApp mes
 - **Image Recognition**: Send an image to the bot, and it will tell you what it sees.
 - **Audio Recognition**: Send an audio message to the bot, and it will transcribe it for you.
 - **Sticker Creation**: Create custom stickers from images.
+- **TikTok Video Download**: Download TikTok videos by sending the video link to the bot.
 - **Open Source**: WhatsApp Bot Gege is open source, so you can contribute to its development and help make it even better.
 
 ## Commands
 WhatsApp Bot Gege supports the following commands:
-| Command | Description |
-| --- | --- |
-| `!ask <question>` | Ask a question and get an answer. |
-| `!image` | Recognize objects in an image. |
-| `!audio` | Transcribe an audio message. |
-| `!sticker` | Create a sticker from an image. |
+| Command | Description | Arguments |
+| --- | --- | --- |
+| `!ask <question>` | Ask a question and get an answer. | `<question>`: The question you want to ask. |
+| `!image` | Recognize objects in an image. | - |
+| `!audio` | Transcribe an audio message. | - |
+| `!sticker` | Create a sticker from an image. | - |
+| `!tiktok <type> <video link>` | Download a TikTok video. | `<type>`: Use `nowatermark` to download the video without a watermark, or `watermark` to download the video with a watermark. <br>`<video link>`: The link to the TikTok video. |
 
 > [!NOTE]
 > To use the `!audio` command, you must first reply to an audio message with the command.
